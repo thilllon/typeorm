@@ -1,0 +1,33 @@
+{
+  "name": "banking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "license": "ISC",
+  "scripts": {
+    "dev2": "nodemon --watch './**/*.ts' --exec 'ts-node' src/index.ts",
+    "dev": "ts-node-dev ./src/index.ts",
+    "format": "prettier . --write --list-different"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "pg": "^8.7.3",
+    "typeorm": "^0.3.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "tabWidth": 2,
+    "endOfLine": "lf",
+    "printWidth": 100,
+    "bracketSameLine": false,
+    "bracketSpacing": true
+  }
+}
